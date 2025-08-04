@@ -48,7 +48,7 @@ const createJobValidation = [
     .withMessage("Invalid job type"),
   body("description")
     .trim()
-    .isLength({ min: 20, max: 2000 })
+    .isLength({ min: 10, max: 2000 })
     .withMessage("Job description must be between 20 and 2000 characters"),
   body("contactEmail")
     .isEmail()
